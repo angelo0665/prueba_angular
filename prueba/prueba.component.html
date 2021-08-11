@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Email</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Doc. Número</th>
+    <th>Teléfono</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let item of data; let i = index">
+  <tr>
+  <td>{{item.id}}</td>
+  <td>{{item.email}}</td>
+  <td>{{item.first_name}}</td>
+  <td>{{item.last_name}}</td>
+  <td>{{item.n_document}}</td>
+  <td>{{item.phone_number}}</td>
+  </tr>
+  </tbody>
+</table>
